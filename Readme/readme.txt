@@ -1,1 +1,3 @@
-git statushola somos "The Gods of programming"
+hola somos "The Gods of programming"
+
+Estamos estudiando la Tecnicatura en Programacion
