@@ -6,5 +6,5 @@ Nuestros nombres son: Abregú, Ana Eugenia - Carrazán, Fabián - Fernandez, Cal
 Juarez, Santiago - Londero, Carina -Lopez, Juan Pablo -Ortigoza Peña, Santiago
 Ramirez Lorca, Jaime Nahuel -Ramirez Lorca, Mauro Uriel -Rueda, Juliana - Yañez , Martín Raul.
 
-
+agrego modificacion a la hoja de trabajo
 
