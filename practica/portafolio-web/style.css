@@ -4,8 +4,6 @@
     list-style: none;
     justify-content: flex-end;
     margin: 0 3rem;
-
-
 }
 
 a{
@@ -13,5 +11,16 @@ a{
     color: black;
 
 }
-   
+.main{
+    display:flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 3rem;
+    text-decoration: none;
+    font-style: italic;
+    color: blue;
+
+
+} 
 
