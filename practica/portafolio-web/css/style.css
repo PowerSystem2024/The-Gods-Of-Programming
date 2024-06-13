@@ -1,12 +1,16 @@
 :root {
-    --body-bg-color: rgba(24, 71, 91, 0.542);
+    --body-bg-color: rgba(8, 69, 95, 0.542);
     --text-color: white;
-    --colorh1-color: rgb(217, 217, 240);
+    --colorh1-color: rgb(189, 189, 231);
 
 
 }
+/*Aplicando variable creada ene l root al body de nuestra web*/
+
 
 body {
+    display: flex;
+    flex-direction: column;
     background: var(--body-bg-color);
     color: var(--text-color);
     font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +20,7 @@ h1, h2, h3, h4, p, a {
     color: var(--colorh1-color);
 }
 
+/*titulo header*/
 .titulo{
     display: flex;
     margin: 3rem;
@@ -29,26 +34,21 @@ h1, h2, h3, h4, p, a {
     color: rgb(255, 240, 245);
 }
 
+/* estilo de los enlaces de la barra de navegacion*/
 a{
     text-decoration: none;
     color: black;
 
 }
-.container-sobrenosotros{
-    display: flex;
-    width: 50%;
-    padding: 2rem;
-    margin-top: 5rem; /*margen alto*/
-    line-height: 2.5rem;
-    font-style: italic; /*cursiva*/
-    color: azure;
-    gap: 5rem;
-    align-items: center;
 
-} 
-.img-perfil{
-    border-radius: 50%;
-}
+/* Todo lo que contiene el mail */
+ .main-container{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+
 .experiencia{
     display: flex;
     justify-content: center;
@@ -74,24 +74,8 @@ a{
         gap: 1rem;
         align-items: center;
     }
-    .container-sobrenosotros{
-        width: 100%;
-        padding: 1;
-        margin-top: 1rem; /*margen alto*/
-        line-height: 2.5rem;
-        font-style: italic; /*cursiva*/
-        flex-direction: column;
-    }
-    .experiencia{
-        width: 100%;
-        margin: 0rem;
-    }
-    .container-experiencia{
-        width: 100%;
-        padding: 1rem;
-        margin-top: 1rem;
-        font-size: small;
-    }
+    
+
 }
 /*tableta - pantallas medianas*/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -103,8 +87,6 @@ a{
         justify-content: center;
     }
    
-    .experiencia,{
-        width: 75%;
        
 }
 
@@ -119,9 +101,6 @@ a{
         justify-content: flex-end;
         margin: 0 3rem;
     }
-   
-    .experiencia,{
-        width: 75%;
-       
+         
 }
 
