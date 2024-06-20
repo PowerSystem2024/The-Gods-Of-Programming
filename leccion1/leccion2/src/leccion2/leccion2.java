@@ -1,6 +1,8 @@
 
 package leccion2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author gapel
@@ -34,8 +36,30 @@ public class leccion2 {
 //        }
 //        System.out.println("numeroTexto = " + numeroTexto);
 //        
-        
-        
+
+
+        // switch 
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Digite un numero del 1 al 4: ");
+        var numero = Integer.parseInt(entrada.nextLine()); // pedimos un numero y pasamos de texto a numero
+        var numeroTexto = "Valor desconocido";
+        switch (numero) {
+            case 1 :
+                numeroTexto = "Número uno";
+                break;
+            case 2 :
+                numeroTexto = "Numero dos";
+                break;
+            case 3 : 
+                numeroTexto = "Numero tres";
+                break;
+            case 4 :
+                numeroTexto = "Numero cuatro";
+                break;
+            default: 
+                numeroTexto = "Caso no encontrado"; 
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
         
         
     }
