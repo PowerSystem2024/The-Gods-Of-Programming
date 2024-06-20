@@ -31,7 +31,7 @@
     .estudios{
         width: 75%;
     }
-    .container-estudios-section {
+    .container-estudios-section { /*para imagen */
         display: flex;
         align-items: center;
         width: 100%;
@@ -43,7 +43,7 @@
     .estudios {
         width: 75%;
     }
-    .container-estudios-section {
+    .container-estudios-section {  /*para imagen */
         display: flex;
         align-items: center;
         width: 100%;
