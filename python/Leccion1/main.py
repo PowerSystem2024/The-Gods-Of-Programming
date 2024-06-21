@@ -266,6 +266,7 @@ elif num1 < num2:
 else:
     print("Los numeros ingresados son iguales")
 '''
+"""
 # Ejercicio: Tienda de Libros
 print('Digite los siguientes datos del libro')
 nombre = input("Digite el nombre del libro: ")
@@ -284,4 +285,6 @@ print(f'''
         ID: {id}
         Precio: {precio}
         Envio Gratuito?: {envioGratuito}
-        ''')
+''')
+"""
+
