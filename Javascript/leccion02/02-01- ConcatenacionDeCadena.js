@@ -40,4 +40,9 @@ let rompimiento = 'rompe';
 console.log($1num);
 console.log(rompimiento);
 
+// hoy ya no se usa mas var, usamos let y const
+let nombre3 = "Carina";
+console.log(nombre3);
 
+const apellido3= "Londero";
+console.log(apellido3)
