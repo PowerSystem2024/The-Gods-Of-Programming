@@ -3,10 +3,7 @@ package Ejercicio_1;
 
 import java.util.Scanner;
 
-/**
- *
- * @author gapel
- */
+
 public class Ejercicio_1 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);  // importamos 
