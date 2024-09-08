@@ -16,3 +16,4 @@ for i in range(2,7):
 print("Rango de 3 a 10 con incremento de 2 en 2")
 for i in range(3, 11, 2):
     print(i)
+
