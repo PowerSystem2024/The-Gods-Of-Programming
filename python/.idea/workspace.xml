@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb6bcb1b-d731-4626-82f2-4bbee95739ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Leccion4/Tuplas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leccion4/ejercicioListasTuplas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leccion4/EjercicioRango.py" beforeDir="false" afterPath="$PROJECT_DIR$/Leccion4/EjercicioRango.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leccion4/Listas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Leccion4/Listas.py" afterDir="false" />
-    </list>
+    <list default="true" id="bb6bcb1b-d731-4626-82f2-4bbee95739ca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
