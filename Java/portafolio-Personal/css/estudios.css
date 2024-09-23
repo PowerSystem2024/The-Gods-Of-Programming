@@ -1,0 +1,39 @@
+.estudios {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container-estudios {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.container-estudios h2, .container-estudios h3 {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .container-estudios {
+        width: 90%;
+        margin-top: 2rem;
+        font-size: medium;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container-estudios {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-estudios {
+        width: 50%;
+    }
+}
