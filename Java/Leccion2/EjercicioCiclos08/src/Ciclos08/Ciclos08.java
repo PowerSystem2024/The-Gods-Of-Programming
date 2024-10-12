@@ -1,14 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Ejercicio8: pedir un numero N, y mostrar todos los numeros del 1 al N
  */
 package Ciclos08;
 
-/**
- *
- * @author gapel
- */
+import java.util.Scanner;
+
 public class Ciclos08 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Ingrese un numero: ");
+        int numero= Integer.parseInt(entrada.nextLine());
+        int i =1;
+        while ( i <= numero) {
+            System.out.println(i);
+            i ++;
+        }
+    }
     
 }
