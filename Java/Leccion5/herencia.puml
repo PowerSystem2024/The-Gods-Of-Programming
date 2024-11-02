@@ -1,0 +1,80 @@
+SobrecargaMetodos.iml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
+-----------
+paquetes
+
+-------------
+utileria.java
+package ar.com.codesystem;
+
+public class Utileria {
+    public static void imprimir(String s) {
+        System.out.println("s =" + s );
+
+    }
+}
+------------
+test// TestUtileria 
+package test;
+import ar.com.codesystem.Utileria;
+import static ar.com.codesystem.Utileria.imprimir;
+public class TestUtileria {
+    public static void main(String[] args) {
+
+
+     //Utileria.imprimir("Saludos a todos");
+    //imprimir("Terminamos en unos minutos");
+    ar.com.codesystem.Utileria.imprimir("Ahora si estamos terminando");
+    }
+}
+--------------
+
+operaciones
+
+
+package Operaciones;
+
+public class operaciones {
+    public static int sumar(int a, int b){
+        System.out.println("Metodo para sumar enteros");
+        return a + b;
+    }
+    public static double sumar(double a, double b){
+        System.out.println("Metodo para sumar double");
+        return a + b;
+
+    }
+}
+--------------
+test/operaciones
+
+package Testoperaciones;
+
+import Operaciones.operaciones;
+public class TestOperaciones {
+    public static void main(String[] args) {
+        var resultado = operaciones.sumar(7,9);
+        System.out.println("resultado = " + resultado);
+        var resultado2 = operaciones.sumar(5.0,7);
+        System.out.println("resultado2 = " + resultado2);
+        var resultado3 = operaciones.sumar(8,6L);
+        System.out.println("resultado3 = " + resultado3);
+    }
+}
+-------
+
+Leccion8
+
+paquete Domain//clase empleado y persona
