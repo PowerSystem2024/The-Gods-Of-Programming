@@ -26,7 +26,7 @@ public class Persona {
     }
 
     public String getDireccion() {
-        return direccion;
+        return this.direccion;
     }
 
     public void setDireccion(String direccion) {
@@ -34,7 +34,7 @@ public class Persona {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
@@ -42,7 +42,7 @@ public class Persona {
     }
 
     public char getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public void setGenero(char genero) {
@@ -50,11 +50,16 @@ public class Persona {
     }
 
     public int getEdad() {
-        return edad;
+        return this.edad;
     }
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    @Override //reescribiendo el toSting
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
     }
 
    
