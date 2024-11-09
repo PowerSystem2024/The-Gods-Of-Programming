@@ -1,46 +1,52 @@
 <script setup>
+import linkedin from '/src/assets/linkedin_icon.svg';
+import instagram from '/src/assets/instagram_icon.svg';
+import github from '/src/assets/github_icon.svg';
+import cv from '/src/assets/cv_resume_icon.svg';
 
-const presentacion = 'Bienvenidos al Portafolio de The Gods of Programming, este grupo pertenece a la carrera de la Tecnicatura Universitaria en Programacion'
-const redessociales = [
-    { id: 1, name: 'Linkedin', src: 'src/assets/linkedin_icon.svg', url: 'www.linkedin.com/in/TheGodsOfProgramming/'},
-    { id: 2, name: 'Instagram', src: 'src/assets/instagram_icon.svg', url: 'www.instagram.com/TheGodsOfProgrammingOK/'},
-    { id: 3, name: 'GitHub', src: 'src/assets/github_icon.svg', url: 'https://github.com/'},
+const title = 'Juan Perez';
+const descripcion = 'Técnico Universitario en Programación - UTN';
+const residencia = 'San Rafael, Mendoza, Argentina';
+const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.';
+const redesSociales = [
+  { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/jose-perez/' },
+  { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/joseperez/' },
+  { id: 3, name: 'github', src: github, url: '' },
+  { id: 4, name: 'curriculum', src: cv, url: '' },
 ];
+const telefono = '+54 9 2604-474849';
 </script>
 
 <template>
-    <section class="datos-personales">
-        <div class="card">
-            <h1> {{ title }}</h1>
-            <h2> {{ descripcion }}</h2>
-            <p> {{ presentacion }}</p>
-            <ul class="container-lista">
-                <li v-for="red in redessociales" :key="red.id">
-                    <a href="red.url"> <img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
-                </li>
-            </ul>
-        </div>
-
-    </section>
-<ul>
-  <li v-for="objeto in arreglo" :key="objeto.id"> {{objeto.nombre}} {{objeto.label}} </li>
-</ul>
+  <section class="datos-personales">
+    <div class="card">
+      <h1>{{ title }}</h1>
+      <h2>{{ descripcion }}</h2>
+      <p>{{ presentacion }}</p>
+      <ul class="container-lista">
+        <li v-for="red in redesSociales" :key="red.id">
+          <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
+        </li>
+      </ul>
+      <h3>☎ Mi Teléfono personal: {{ telefono }}</h3>
+      <h4>{{ residencia }}</h4>
+    </div>
+  </section>
 </template>
+
 <style scoped>
 h1 {
   font-size: 2.5rem;
-  font-family: Arial, sans-serif; /* Fuente Arial */
 }
 
 p {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-family: Arial, sans-serif; /* Fuente Arial */
 }
 
 .card {
-  background-color: #7284b6;
+  background-color: rgb(28, 41, 52);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -70,5 +76,8 @@ p {
   box-shadow: 0 0 5px rgba(251, 249, 249, 0.934);
 }
 
-
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 </style>
