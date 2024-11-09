@@ -9,12 +9,11 @@ const descripcion = 'Técnico Universitario en Programación - UTN';
 const residencia = 'San Rafael, Mendoza, Argentina';
 const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.';
 const redesSociales = [
-  { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/jose-perez/' },
-  { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/joseperez/' },
+  { id: 1, name: 'linkedin', src: linkedin, url: '' },
+  { id: 2, name: 'Instagram', src: instagram, url: '' },
   { id: 3, name: 'github', src: github, url: '' },
   { id: 4, name: 'curriculum', src: cv, url: '' },
 ];
-const telefono = '+54 9 2604-474849';
 </script>
 
 <template>
@@ -28,8 +27,7 @@ const telefono = '+54 9 2604-474849';
           <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
         </li>
       </ul>
-      <h3>☎ Mi Teléfono personal: {{ telefono }}</h3>
-      <h4>{{ residencia }}</h4>
+      <h3>{{ residencia }}</h3>
     </div>
   </section>
 </template>
