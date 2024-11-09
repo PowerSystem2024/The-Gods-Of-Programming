@@ -26,6 +26,9 @@ const navegacion= ref([
     color: #fff; /* Establece el color del texto en blanco */
     padding: 0.5rem 1rem; /* Añade un padding de 0.5rem arriba y abajo, y 1rem a los lados */
     align-items: center; /* Centra verticalmente los elementos dentro de la navbar */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .navbar-item {
