@@ -72,7 +72,40 @@ public class ProyectoIntegrador {
     }
     
     private static void inicializarDatos() {
-         
+
+        // Inicializar medios de comunicación
+        mediosComunicacion.add(new MedioComunicacion("El Norteño"));
+        mediosComunicacion.add(new MedioComunicacion("Del Sur"));
+        mediosComunicacion.add(new MedioComunicacion("Patagónico"));
+        mediosComunicacion.add(new MedioComunicacion("Del Centro"));
+        mediosComunicacion.add(new MedioComunicacion("El Cuyano"));
+        mediosComunicacion.add(new MedioComunicacion("Del Litoral"));
+
+        // Inicializar tipos de módulos
+        tiposModulos.add(new TipoModulo("M1"));
+        tiposModulos.add(new TipoModulo("M2"));
+        tiposModulos.add(new TipoModulo("M3"));
+        tiposModulos.add(new TipoModulo("M4"));
+        tiposModulos.add(new TipoModulo("M6"));
+        tiposModulos.add(new TipoModulo("M8"));
+        tiposModulos.add(new TipoModulo("M12"));
+        tiposModulos.add(new TipoModulo("M16"));
+
+
+        // Inicializar frecuencias de publicación
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("D"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("LAV"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("SD"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("1S"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("2S"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("3S"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("1.15"));
+        frecuenciasPublicacion.add(new FrecuenciaPublicacion("1.30"));
+
+          // Cargar anuncios de prueba
+        anuncios.add(new Anuncio(mediosComunicacion.get(0), tiposModulos.get(0), frecuenciasPublicacion.get(0), 1000.0, "Empresa 1"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(1), tiposModulos.get(1), frecuenciasPublicacion.get(1), 800.0, "Empresa 2"));
+        
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 5; j++) {
                 anuncios[i][j] = "";
