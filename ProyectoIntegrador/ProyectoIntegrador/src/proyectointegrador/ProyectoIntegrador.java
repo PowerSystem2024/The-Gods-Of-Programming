@@ -3,6 +3,13 @@ package proyectointegrador;
 import java.util.Scanner;
 
 public class ProyectoIntegrador {
+
+    //Nueva inicialización de datos
+    private static final List<MedioComunicacion> mediosComunicacion = new ArrayList<>();
+    private static final List<TipoModulo> tiposModulos = new ArrayList<>();
+    private static final List<FrecuenciaPublicacion> frecuenciasPublicacion = new ArrayList<>();
+    private static final List<Anuncio> anuncios = new ArrayList<>();
+    
     // Inicializar datos
     private static final String[] MEDIOS_COMUNICACION = {
         "El Norteño", "Del Sur", "Patagónico", "Del Centro", "El Cuyano", "Del Litoral"
