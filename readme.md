@@ -1,4 +1,4 @@
-# Portafolio The Gods of Programming
+# Repositorio de "The Gods of Programming"
 
 Repositorio perteneciente al grupo "The Gods of Programming"
 
