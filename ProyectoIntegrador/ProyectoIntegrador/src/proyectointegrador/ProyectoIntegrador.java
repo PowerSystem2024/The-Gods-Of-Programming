@@ -1,4 +1,3 @@
-
 package proyectointegrador;
 
 import java.util.Scanner;
@@ -34,15 +33,7 @@ public class ProyectoIntegrador {
         inicializarDatos();
 
         do {
-            System.out.println("Menú Principal");
-            System.out.println("1. Mostrar precios");
-            System.out.println("2. Agregar anuncio");
-            System.out.println("3. Eliminar anuncio");
-            System.out.println("4. Mostrar anuncios");
-            System.out.println("5. Buscar anuncio por empresa");
-            System.out.println("6. Modificar anuncio");
-            System.out.println("7. Calcular ingresos totales de los anuncios cargados");
-            System.out.println("0. Salir");
+            mostrarMenu();
             opcion = scanner.nextInt();
 
             switch (opcion) {
@@ -61,6 +52,19 @@ public class ProyectoIntegrador {
         scanner.close();
     }
 
+    private static void mostrarMenu() {
+        System.out.println("Menú Principal");
+        System.out.println("1. Mostrar precios");
+        System.out.println("2. Agregar anuncio");
+        System.out.println("3. Eliminar anuncio");
+        System.out.println("4. Mostrar anuncios");
+        System.out.println("5. Buscar anuncio por empresa");
+        System.out.println("6. Modificar anuncio");
+        System.out.println("7. Calcular ingresos totales de los anuncios cargados");
+        System.out.println("0. Salir");
+    }
+    
+    
     private static void inicializarDatos() {
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 5; j++) {
