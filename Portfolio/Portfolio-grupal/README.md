@@ -1,9 +1,14 @@
-# Portafolio CV - Template 
+# Portafolio The Gods of Programming
 
-Este template sirve como base para armar un portafolio personal de una persona. 
-Esta armado siguiendo los pasos de la cursada de la materia PROGRAMACIÓN II MIERCOLES 2024 - Tecnicatura en Programación
+Portafolio perteneciente al grupo "The Gods of Programming"
 
-## 💿 Instalación y desarrollo
+## 📋 Tabla de contenido
+- [💿 Instalación y Desarrollo](#instalacion-y-desarrollo)
+- [🚀 Despliegue en Netlify](#despliegue-en-netlify)
+- [✨ Contribuidores](#contribuidores)
+- [📄 Licencia](#licencia)
+
+## <a id="instalacion-y-desarrollo"></a> 💿 Instalación y desarrollo
 
 ### Recommended IDE Setup
 
@@ -37,7 +42,7 @@ npm run build
 npm run lint
 ```
 
-## 🚀 Despliegue en Netlify
+## <a id="despliegue-en-netlify"></a> 🚀 Despliegue en Netlify
 
 Sigue estos pasos para desplegar tu portfolio en Netlify:
 
@@ -62,7 +67,36 @@ Sigue estos pasos para desplegar tu portfolio en Netlify:
 6. **Accede a tu portfolio:**
    Netlify te proporcionará una URL única para tu portfolio.
 
-## 📄 Licencia
+## <a id="contribuidores"></a> ✨ Contribuidores
+
+Este proyecto fue realizado gracias a la colaboración de:
+
+**Londero, Carina**
+
+* **GitHub:** [carilondero](http://github.com/carilondero)
+
+**Lopez, Juan Pablo**
+
+* **GitHub:** [JuanpiLopez](http://github.com/JuanpiLopez)
+
+**Ortigoza Peña, Santiago**
+
+* **GitHub:** [ElSan7o](http://github.com/ElSan7o)
+
+**Ramirez Lorca, Jaime Nahuel**
+
+* **GitHub:** [tachi123](http://github.com/tachi123)
+
+**Ramirez Lorca, Mauro Uriel**
+
+* **GitHub:** [Urielpower](http://github.com/Urielpower)
+
+**Rueda, Juliana**
+
+* **GitHub:** [julianarueda](http://github.com/julianarueda)
+
+
+## <a id="licencia"></a> 📄 Licencia
 
 Codigo y documentacion copyright 2024
 
