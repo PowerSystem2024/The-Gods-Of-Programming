@@ -20,7 +20,6 @@ public class ProyectoIntegrador {
     private static final Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int opcion;
 
         inicializarDatos();
@@ -36,7 +35,7 @@ public class ProyectoIntegrador {
                 case 4 -> mostrarAnuncios();
                 case 5 -> buscarAnuncioPorEmpresa();
                 case 6 -> modificarAnuncio();
-                case 7 -> calcularIngresosTotales();
+                case 7 -> mostrarIngresosTotales();
                 case 0 -> System.out.println("Saliendo...");
                 default -> System.out.println("Opción incorrecta");
             }
@@ -293,7 +292,7 @@ public class ProyectoIntegrador {
         }
     }
 
-    private static void calcularIngresosTotales(){
+    private static void mostrarIngresosTotales(){
         System.out.println("El ingreso total de todos los anuncios cargados en el sistema es: $" + calcularIngresosTotales());
     }
 }
