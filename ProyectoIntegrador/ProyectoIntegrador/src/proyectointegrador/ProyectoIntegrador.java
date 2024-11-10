@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import proyectointegrador.modelos.Anuncio;
+import proyectointegrador.modelos.FrecuenciaPublicacion;
+import proyectointegrador.modelos.MedioComunicacion;
+import proyectointegrador.modelos.TipoModulo;
+
 public class ProyectoIntegrador {
 
     //Nueva inicialización de datos
@@ -274,116 +279,3 @@ public class ProyectoIntegrador {
         }
     }
 }
-
-
-
-class MedioComunicacion {
-    String nombre;
-
-    public MedioComunicacion(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-}
-
-class TipoModulo {
-    String nombre;
-
-    public TipoModulo(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-}
-
-class FrecuenciaPublicacion {
-    String nombre;
-
-    public FrecuenciaPublicacion(String nombre) {
-        this.nombre = nombre;
-    }
-
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-}
-
-class Anuncio {
-    MedioComunicacion medio;
-    TipoModulo modulo;
-    FrecuenciaPublicacion frecuencia;
-    double precio;
-    String empresa;
-
-    public Anuncio(MedioComunicacion medio, TipoModulo modulo, FrecuenciaPublicacion frecuencia, double precio, String empresa) {
-        this.medio = medio;
-        this.modulo = modulo;
-        this.frecuencia = frecuencia;
-        this.precio = precio;
-        this.empresa = empresa;
-    }
-
-
-    public MedioComunicacion getMedio() {
-        return medio;
-    }
-
-    public void setMedio(MedioComunicacion medio) {
-        this.medio = medio;
-    }
-
-    public TipoModulo getModulo() {
-        return modulo;
-    }
-
-    public void setModulo(TipoModulo modulo) {
-        this.modulo = modulo;
-    }
-
-    public FrecuenciaPublicacion getFrecuencia() {
-        return frecuencia;
-    }
-
-    public void setFrecuencia(FrecuenciaPublicacion frecuencia) {
-        this.frecuencia = frecuencia;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public String getEmpresa() {
-        return empresa;
-    }
-
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
-    }
-
-}
-
- 
-    
-
