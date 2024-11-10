@@ -194,11 +194,12 @@ public class ProyectoIntegrador {
         String nombreEmpresa = scanner.nextLine();
         boolean encontrado = false;
 
-        for (Anuncio anuncio : anuncios) {
+        for (int i = 0; i < anuncios.size(); i++) {
+            Anuncio anuncio = anuncios.get(i); // Obtener el anuncio por índice
             if (anuncio.getEmpresa().equalsIgnoreCase(nombreEmpresa)) {
                 System.out.printf(
                         "ID: %d, Medio: %s, Módulo: %s, Frecuencia: %s, Precio: $%s, Empresa: %s%n",
-                        anuncio.getMedio().getNombre(), anuncio.getModulo().getNombre(), anuncio.getFrecuencia().getNombre(), anuncio.getPrecio(), anuncio.getEmpresa()
+                        i, anuncio.getMedio().getNombre(), anuncio.getModulo().getNombre(), anuncio.getFrecuencia().getNombre(), anuncio.getPrecio(), anuncio.getEmpresa()
                 );
                 encontrado = true;
             }
