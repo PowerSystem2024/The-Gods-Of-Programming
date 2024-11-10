@@ -1,20 +1,13 @@
 <script setup>
-import linkedin from '/src/assets/linkedin_icon.svg';
-import instagram from '/src/assets/instagram_icon.svg';
 import github from '/src/assets/github_icon.svg';
-import cv from '/src/assets/cv_resume_icon.svg';
 
-const title = 'Juan Perez';
-const descripcion = 'Técnico Universitario en Programación - UTN';
+const title = 'The Gods of Programming';
+const descripcion = 'Portafolio de Proyectos';
 const residencia = 'San Rafael, Mendoza, Argentina';
-const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles.';
+const presentacion = 'Hola, Bienvenido al portfolio de proyectos del grupo  "The Gods of Programming" de la carrera Técnico Universitario en Programación - UTN.';
 const redesSociales = [
-  { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/jose-perez/' },
-  { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/joseperez/' },
-  { id: 3, name: 'github', src: github, url: '' },
-  { id: 4, name: 'curriculum', src: cv, url: '' },
+  { id: 1, name: 'github', src: github, url: 'https://github.com/PowerSystem2024/The-Gods-Of-Programming/' }
 ];
-const telefono = '+54 9 2604-474849';
 </script>
 
 <template>
@@ -28,7 +21,6 @@ const telefono = '+54 9 2604-474849';
           <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
         </li>
       </ul>
-      <h3>☎ Mi Teléfono personal: {{ telefono }}</h3>
       <h4>{{ residencia }}</h4>
     </div>
   </section>
