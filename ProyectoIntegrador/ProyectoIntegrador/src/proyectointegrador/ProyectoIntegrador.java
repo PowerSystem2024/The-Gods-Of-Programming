@@ -83,8 +83,17 @@ public class ProyectoIntegrador {
         frecuenciasPublicacion.add(new FrecuenciaPublicacion("1.30"));
 
         // Cargar anuncios de prueba
-        anuncios.add(new Anuncio(mediosComunicacion.get(0), tiposModulos.get(0), frecuenciasPublicacion.get(0), 1000.0, "Empresa 1"));
-        anuncios.add(new Anuncio(mediosComunicacion.get(1), tiposModulos.get(1), frecuenciasPublicacion.get(1), 800.0, "Empresa 2"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(0), tiposModulos.get(3), frecuenciasPublicacion.get(1), 2500.0, "Tech Solutions Inc."));
+        anuncios.add(new Anuncio(mediosComunicacion.get(1), tiposModulos.get(1), frecuenciasPublicacion.get(0), 1800.0, "Innovate Corp."));
+        anuncios.add(new Anuncio(mediosComunicacion.get(2), tiposModulos.get(5), frecuenciasPublicacion.get(6), 4300.0, "Global Industries Ltd."));
+        anuncios.add(new Anuncio(mediosComunicacion.get(3), tiposModulos.get(0), frecuenciasPublicacion.get(2), 500.0, "Creative Designs Studio"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(4), tiposModulos.get(2), frecuenciasPublicacion.get(4), 1300.0, "Marketing Masters"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(5), tiposModulos.get(7), frecuenciasPublicacion.get(7), 1000.0, "Digital Dynamics"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(0), tiposModulos.get(4), frecuenciasPublicacion.get(3), 200.0, "Code Wizards"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(1), tiposModulos.get(6), frecuenciasPublicacion.get(5), 900.0, "Future Vision"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(2), tiposModulos.get(0), frecuenciasPublicacion.get(0), 2100.0, "Open Source Solutions"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(3), tiposModulos.get(2), frecuenciasPublicacion.get(1), 2100.0, "Web Dev Experts"));
+        anuncios.add(new Anuncio(mediosComunicacion.get(4), tiposModulos.get(1), frecuenciasPublicacion.get(4), 2100.0, "Marketing Masters"));
         
     }
 
