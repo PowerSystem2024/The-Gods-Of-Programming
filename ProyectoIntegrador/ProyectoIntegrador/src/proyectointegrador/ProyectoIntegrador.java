@@ -45,7 +45,9 @@ public class ProyectoIntegrador {
     }
 
     private static void mostrarMenu() {
-        System.out.println("Menú Principal");
+        System.out.println("****************************************");
+        System.out.println("********** Menú Principal **********");
+        System.out.println("****************************************");
         System.out.println("1. Mostrar precios");
         System.out.println("2. Agregar anuncio");
         System.out.println("3. Eliminar anuncio");
@@ -54,6 +56,7 @@ public class ProyectoIntegrador {
         System.out.println("6. Modificar anuncio");
         System.out.println("7. Calcular ingresos totales de los anuncios cargados");
         System.out.println("0. Salir");
+        System.out.println("****************************************");
     }
     
     private static void inicializarDatos() {
