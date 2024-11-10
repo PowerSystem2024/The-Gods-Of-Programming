@@ -21,6 +21,7 @@ public class ProyectoIntegrador {
         do {
             mostrarMenu();
             opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir el salto de línea
 
             switch (opcion) {
                 case 1 -> mostrarPrecios();
