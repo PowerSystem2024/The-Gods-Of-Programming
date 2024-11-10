@@ -11,11 +11,13 @@ import proyectointegrador.modelos.TipoModulo;
 
 public class ProyectoIntegrador {
 
-    //Nueva inicialización de datos
     private static final List<MedioComunicacion> mediosComunicacion = new ArrayList<>();
     private static final List<TipoModulo> tiposModulos = new ArrayList<>();
     private static final List<FrecuenciaPublicacion> frecuenciasPublicacion = new ArrayList<>();
     private static final List<Anuncio> anuncios = new ArrayList<>();
+
+    //Scanner global para que sea accesible desde todos los métodos
+    private static final Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -29,10 +31,10 @@ public class ProyectoIntegrador {
 
             switch (opcion) {
                 case 1 -> mostrarPrecios();
-                case 2 -> agregarAnuncio(scanner);
-                case 3 -> eliminarAnuncio(scanner);
+                case 2 -> agregarAnuncio();
+                case 3 -> eliminarAnuncio();
                 case 4 -> mostrarAnuncios();
-                case 5 -> buscarAnuncioPorEmpresa(scanner);
+                case 5 -> buscarAnuncioPorEmpresa();
                 case 6 -> modificarAnuncio(scanner);
                 case 7 -> System.out.println("El ingreso total de todos los anuncios cargados en el sistema es: $" + calcularIngresosTotales());
                 case 0 -> System.out.println("Saliendo...");
@@ -140,7 +142,7 @@ public class ProyectoIntegrador {
         return PRECIOS[modulo][frecuencia];
     }
 
-    private static void agregarAnuncio(Scanner scanner) {
+    private static void agregarAnuncio() {
 
         System.out.println("Seleccione el medio de comunicación:");
         for (int i = 0; i < mediosComunicacion.size(); i++) {
@@ -183,7 +185,7 @@ public class ProyectoIntegrador {
         System.out.println("Anuncio agregado exitosamente.");
     }
 
-    private static void eliminarAnuncio(Scanner scanner) {
+    private static void eliminarAnuncio() {
         mostrarAnuncios();
         System.out.println("Ingrese el ID del anuncio a eliminar:");
         int anuncioId = scanner.nextInt();
@@ -215,7 +217,7 @@ public class ProyectoIntegrador {
         return totalIngresos;
     }
 
-    private static void buscarAnuncioPorEmpresa(Scanner scanner) {
+    private static void buscarAnuncioPorEmpresa() {
         System.out.println("Ingrese el nombre de la empresa a buscar:");
         String nombreEmpresa = scanner.nextLine();
         boolean encontrado = false;
