@@ -25,8 +25,7 @@ public class ProyectoIntegrador {
 
         do {
             mostrarMenu();
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            opcion = obtenerOpcion();
 
             switch (opcion) {
                 case 1 -> mostrarPrecios();
@@ -42,6 +41,16 @@ public class ProyectoIntegrador {
         } while (opcion != 0);
         
         scanner.close();
+    }
+
+    private static int obtenerOpcion() {
+        while (!scanner.hasNextInt()) {
+            System.out.println("Entrada inválida. Ingrese un número.");
+            scanner.next(); // Descartar la entrada inválida
+        }
+        int opcion = scanner.nextInt();
+        scanner.nextLine(); // Consumir el salto de línea
+        return opcion;
     }
 
     private static void mostrarMenu() {
