@@ -1,0 +1,43 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+
+
+a {
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+  color: var(--vt-c-white);
+  /* Establece el color del enlace usando una variable CSS */
+}
+
+
+
+/*Agregaremos esta media query pensando en el responsivo desde ahora por esta regla:*/
+
+@media (max-width: 768px) {
+  #app {
+    display: flex;
+    /* Aplica un diseño flexible al contenedor */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    font-size: small;
+    /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    display: flex;
+    /* Aplica un diseño flexible al contenedor */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    width: 80%;
+    /* Limita el ancho del contenedor al 80% de la pantalla en dispositivos grandes */
+  }
+}
