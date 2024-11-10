@@ -6,6 +6,7 @@
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding: 2rem; /* Añade un relleno interno de 2rem */
   font-weight: normal; /* Establece el peso de la fuente como normal */
+  background: linear-gradient(to bottom, #126D7D, white);
 }
 
 a {
