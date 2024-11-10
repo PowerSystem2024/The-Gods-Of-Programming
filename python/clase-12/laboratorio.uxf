@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Computadora
+--
+-contador_computadora: int --static--
+-idcomputadora: int
+nombre: str
+monitor: Monitor
+teclado: Teclado
+raton:Raton
+--
++__str__()
+(Agregar los metodos get/set  de cada tributo)
+--
+Responsibilities
+crear objetos de tipo computadora
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>0</y><w>260</w><h>160</h></coordinates><panel_attributes>orden
+--
+-id: orden: int
+_-Computadoras : list --computdoras--
+--
++agregarComputadoras(computadoras)
+/+__str__()
+agregar metodos get/set de cada atributo
+--
+Responsibilities
+-- almacenar en una lista los elementos de
+ tipo computadora
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>180</y><w>310</w><h>140</h></coordinates><panel_attributes>dispositivo de entrada
+--
+-tipo entrada: string
+_marca:string
+--
++__str__()
+agregar metodos get/set para los atribbutos
+--
+Responsibilities
+--crear objeto de tipo entrada
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>340</y><w>210</w><h>160</h></coordinates><panel_attributes>monitor
+--
+-contadorMonitores : int --static--
+_idmonitor: int
+marca:string
+tamaño :str
+--
++__str__()
+agregar los metodos get/set
+--
+Responsibilities
+--crear objetos de tipo monitor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>350</y><w>210</w><h>130</h></coordinates><panel_attributes>teclado
+--
+-contadorTeclados :int --static--
+idteclado: int
+--
+__str__()
+--
+Responsibilities
+-- crear objetos de tipo teclado
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>350</y><w>210</w><h>130</h></coordinates><panel_attributes>raton
+--
+-contadorRtones :int --static--
+idraton: int
+--
+__str__()
+--
+Responsibilities
+-- crear objetos de tipo raton
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
