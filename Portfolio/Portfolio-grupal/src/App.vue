@@ -1,6 +1,6 @@
 <script setup>
 import DatosPersonales from './components/DatosPersonales.vue';
-import NavBar from './components/icons/NavBar.vue';
+import NavBar from './components/NavBar.vue';
 import IntegrantesGrupo from './components/IntegrantesGrupo.vue';
 import LenguajesYTecnologias from './components/LenguajesYTecnologias.vue';
 
