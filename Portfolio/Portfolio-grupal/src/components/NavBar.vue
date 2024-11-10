@@ -1,9 +1,9 @@
 <template>
     <nav class="navbar">
-            <div class="navbar-menu">
-                <ul>
+        <div class="navbar-container">
+            <ul class="navbar-list">
 <!--Se coloco el operador v-bind al atributo href utilizando su minima expreción el operador : / y se soluciono el enlace a las distintas secciones-->
-                    <a v-for="nav in navegacion" :key="nav.nombre" :href="nav.enlace" class="nav-item" >{{nav.nombre}}</a>  
+                    <a v-for="nav in navegacion" :key="nav.nombre" :href="nav.enlace" class="navbar-item" >{{nav.nombre}}</a>  
                 </ul>
             </div>
         </nav>
@@ -12,26 +12,56 @@
 <script setup>
 import { ref } from 'vue';
 const navegacion= ref([
-    {id:1, nombre:'Educación', enlace:'#educacion'},
-    {id:2, nombre:'Experiencia', enlace:'#experiencia'},
-    {id:3, nombre:'Proyectos', enlace:'#proyectos'},
-    {id:4, nombre:'Habilidades', enlace:'#habilidades'},
-    {id:5, nombre:'Intereses', enlace:'#intereses'}
+    {id:1, nombre: "Integrantes", enlace:'#integrantes'},
+    {id:2, nombre: "Lenguajes", enlace:'#lenguajes'},
+    {id:3, nombre: "Proyectos", enlace:'#proyectos'},
+    {id:4, nombre: "Más", enlace:'#mas'}
 ]);
 </script>
 
 <style scoped>
 .navbar {
-    background-color: var(--vt-c-indigo); /* Establece el color de fondo usando una variable CSS */
-    color: #fff; /* Establece el color del texto en blanco */
-    padding: 0.5rem 1rem; /* Añade un padding de 0.5rem arriba y abajo, y 1rem a los lados */
-    align-items: center; /* Centra verticalmente los elementos dentro de la navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradiente de color compatible con el fondo */
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+.navbar-container {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-item {
     color: #fff; /* Establece el color del texto en blanco */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     margin-right: 1rem; /* Añade un margen derecho de 1rem entre los elementos */
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones */
 }
 
 .navbar-menu {
@@ -52,15 +82,30 @@ a {
     padding: 5px; /* Añade un padding de 5px alrededor del contenido */
 }
 
-a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2); /* Cambia el color de fondo al pasar el mouse sobre un enlace */
+.navbar-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el ratón */
+    transform: scale(1.05); /* Escala al pasar el ratón */
 }
 
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: flex; /* Organiza los elementos en línea usando flexbox */
-    justify-content: flex-end; /* Alinea los elementos al final de la navbar */
-    width: 100%; /* Asegura que la navbar ocupe el 100% del ancho en pantallas pequeñas */
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-item {
+    width: 100%;
+  }
+
+  .navbar-item a {
+    display: block;
+    width: 100%;
+    text-align: left;
   }
 }
 
