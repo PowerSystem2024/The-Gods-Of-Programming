@@ -11,6 +11,7 @@ import proyectointegrador.modelos.TipoModulo;
 
 public class ProyectoIntegrador {
 
+    //Lista de medios de comunicación, tipos de módulos, frecuencias de publicación y anuncios creados
     private static final List<MedioComunicacion> mediosComunicacion = new ArrayList<>();
     private static final List<TipoModulo> tiposModulos = new ArrayList<>();
     private static final List<FrecuenciaPublicacion> frecuenciasPublicacion = new ArrayList<>();
@@ -18,7 +19,8 @@ public class ProyectoIntegrador {
 
     //Scanner global para que sea accesible desde todos los métodos
     private static final Scanner scanner = new Scanner(System.in);
-    
+
+    //Método principal del programa.
     public static void main(String[] args) {
         int opcion;
 
@@ -44,6 +46,10 @@ public class ProyectoIntegrador {
         scanner.close();
     }
 
+    /**
+     * Obtiene una opción numérica del usuario.
+     * Valida que la entrada sea un número entero.
+     */
     private static int obtenerOpcion() {
         while (!scanner.hasNextInt()) {
             System.out.println("Entrada inválida. Ingrese un número.");
@@ -54,6 +60,7 @@ public class ProyectoIntegrador {
         return opcion;
     }
 
+    //Muestra el menú principal del programa.
     private static void mostrarMenu() {
         System.out.println("****************************************");
         System.out.println("********** Menú Principal **********");
@@ -68,7 +75,8 @@ public class ProyectoIntegrador {
         System.out.println("0. Salir");
         System.out.println("****************************************");
     }
-    
+
+    //Inicializa los datos del programa (medios, módulos, frecuencias y anuncios de prueba).
     private static void inicializarDatos() {
 
         // Inicializar medios de comunicación
@@ -114,17 +122,20 @@ public class ProyectoIntegrador {
         anuncios.add(new Anuncio(mediosComunicacion.get(4), tiposModulos.get(1), frecuenciasPublicacion.get(4), 2100.0, "Marketing Masters"));
         
     }
-
+    
+    //Muestra los precios de los espacios publicitarios.
     private static void mostrarPrecios() {
         System.out.println("Precios de los espacios publicitarios:");
         for (int i = 0; i < tiposModulos.size(); i++) {
             for (int j = 0; j < frecuenciasPublicacion.size(); j++) {
-               // System.out.println(TIPOS_MODULOS[i] + " - " + FRECUENCIAS_PUBLICACION[j] + ": $" + PRECIOS[i][j]);
                 System.out.println(tiposModulos.get(i).getNombre() + " - " + frecuenciasPublicacion.get(j).getNombre() + ": $" + getPrecio(i,j));
             }
         }
     }
-    
+
+    //Obtiene el precio de un espacio publicitario según el módulo y la frecuencia
+    //@param modulo Índice del módulo
+    //@param frecuencia Índice de la frecuencia
     private static double getPrecio(int modulo, int frecuencia) {
 
         double[][] PRECIOS = {
@@ -141,6 +152,8 @@ public class ProyectoIntegrador {
         return PRECIOS[modulo][frecuencia];
     }
 
+    //Agrega un nuevo anuncio al sistema
+    //Solicita al usuario los datos del anuncio (medio, módulo, frecuencia, empresa)
     private static void agregarAnuncio() {
 
         System.out.println("Seleccione el medio de comunicación:");
@@ -184,6 +197,8 @@ public class ProyectoIntegrador {
         System.out.println("Anuncio agregado exitosamente.");
     }
 
+    //Elimina un anuncio del sistema
+    //Solicita al usuario el ID del anuncio a eliminar
     private static void eliminarAnuncio() {
         mostrarAnuncios();
         System.out.println("Ingrese el ID del anuncio a eliminar:");
@@ -198,6 +213,7 @@ public class ProyectoIntegrador {
         }
     }
 
+    //Muestra la lista de anuncios creados
     private static void mostrarAnuncios() {
         System.out.println("Lista de anuncios:");
         for (int i = 0; i < anuncios.size(); i++) {
@@ -208,6 +224,7 @@ public class ProyectoIntegrador {
         }
     }
 
+    //Calcula los ingresos totales de los anuncios cargados
     private static double calcularIngresosTotales() {
         double totalIngresos = 0;
         for (Anuncio anuncio : anuncios) {
@@ -216,6 +233,7 @@ public class ProyectoIntegrador {
         return totalIngresos;
     }
 
+    //Busca anuncios por el nombre de la empresa
     private static void buscarAnuncioPorEmpresa() {
         System.out.println("Ingrese el nombre de la empresa a buscar:");
         String nombreEmpresa = scanner.nextLine();
@@ -237,6 +255,8 @@ public class ProyectoIntegrador {
         }
     }
 
+    //Modifica un anuncio existente
+    //Solicita al usuario el ID del anuncio a modificar y los nuevos datos
     private static void modificarAnuncio() {
         mostrarAnuncios();
         
@@ -292,6 +312,7 @@ public class ProyectoIntegrador {
         }
     }
 
+    //Muestra el total de ingresos de los anuncios cargados
     private static void mostrarIngresosTotales(){
         System.out.println("El ingreso total de todos los anuncios cargados en el sistema es: $" + calcularIngresosTotales());
     }
