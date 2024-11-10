@@ -15,12 +15,12 @@ import LenguajesYTecnologias from './components/LenguajesYTecnologias.vue';
 
 </header>
 <main>
-  <section id="Integrantes"><h2>Integrantes</h2></section>
+  <section id="integrantes"><h2>Integrantes</h2></section>
   <IntegrantesGrupo/>
-  <section id="Lenguajes"><h2>Lenguajes y Tecnologias</h2></section>
+  <section id="lenguajes"><h2>Lenguajes y Tecnologias</h2></section>
   <LenguajesYTecnologias/>
-  <section id="Proyecto"><h2>Proyecto</h2></section>
-  <section id="Más"><h2>Más</h2></section>
+  <section id="proyectos"><h2>Proyectos</h2></section>
+  <section id="mas"><h2>Más</h2></section>
 </main>
 </template>
 
