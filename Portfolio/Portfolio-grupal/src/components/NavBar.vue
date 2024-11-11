@@ -14,8 +14,7 @@ import { ref } from 'vue';
 const navegacion= ref([
     {id:1, nombre: "Integrantes", enlace:'#integrantes'},
     {id:2, nombre: "Lenguajes", enlace:'#lenguajes'},
-    {id:3, nombre: "Proyectos", enlace:'#proyectos'},
-    {id:4, nombre: "Más", enlace:'#mas'}
+    {id:3, nombre: "Proyectos", enlace:'#proyectos'}
 ]);
 </script>
 

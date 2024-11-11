@@ -1,5 +1,13 @@
 <script setup>
 import { ref } from 'vue';
+
+import imgVue from '/src/components/icons/vue.svg';
+import imgMySQL from '/src/components/icons/mysql.svg';
+import imgGit from '/src/components/icons/git.svg';
+import imgJava from '/src/components/icons/java.svg';
+import imgPython from '/src/components/icons/python.svg';
+import imgJavaScript from '/src/components/icons/js.svg';
+
 const herramientas = ref([]);
 /*Esta es otra forma de utilizar el arreglo, con el metodo value*/
 herramientas.value = [
@@ -11,21 +19,21 @@ herramientas.value = [
 ];
 /*Esta es la forma de utilizar el arreglo, sin el metodo value*/
 const lenguajesytecnologias = ref([
-  {nombre: 'Vue.js', descripcion: 'Ideal para crear componentes reutilizables y aplicaciones de una sola página (SPA).', enlace:'https://www.youtube.com/'},
-  {nombre: 'MySQL', descripcion: 'Almacena y recupera datos estructurados. Perfecto para aplicaciones que requieren almacenamiento persistente.', enlace:'http:www.direccion.com'},
-  {nombre: 'Git', descripcion: 'Esencial para colaborar en proyectos de desarrollo, mantener un historial de cambios y trabajar en equipo.', enlace:'http:www.direccion.com'},
-  {nombre: 'JAVA', descripcion: 'deal para aplicaciones empresariales, Android y sistemas embebidos. También se utiliza en el backend de aplicaciones web.', enlace:'http:www.direccion.com'},
-  {nombre: 'Python', descripcion: 'Ampliamente utilizado en ciencia de datos, desarrollo web, automatización y scripting. También es excelente para prototipado rápido.', enlace:'http:www.direccion.com'},
-  {nombre: 'Java Script', descripcion: 'Se ejecuta en el navegador y permite crear interacciones dinámicas en las páginas web. Es esencial para el frontend.', enlace:'http:www.direccion.com'}
+  {nombre: 'Vue.js', descripcion: 'Ideal para crear componentes reutilizables y aplicaciones de una sola página (SPA).', imagen:imgVue },
+  {nombre: 'MySQL', descripcion: 'Almacena y recupera datos estructurados. Perfecto para aplicaciones que requieren almacenamiento persistente.', imagen: imgMySQL},
+  {nombre: 'Git', descripcion: 'Esencial para colaborar en proyectos de desarrollo, mantener un historial de cambios y trabajar en equipo.', imagen: imgGit},
+  {nombre: 'JAVA', descripcion: 'deal para aplicaciones empresariales, Android y sistemas embebidos. También se utiliza en el backend de aplicaciones web.', imagen: imgJava},
+  {nombre: 'Python', descripcion: 'Ampliamente utilizado en ciencia de datos, desarrollo web, automatización y scripting. También es excelente para prototipado rápido.',imagen: imgPython},
+  {nombre: 'Java Script', descripcion: 'Se ejecuta en el navegador y permite crear interacciones dinámicas en las páginas web. Es esencial para el frontend.', imagen: imgJavaScript}
 ]);
 </script>
 <template>
     <div class="container">
       <ul>
         <li v-for="(item, index) in lenguajesytecnologias" :key="index">
+          <img :src="item.imagen" :alt="item.nombre" class="imagen">
           <div class="nombre">{{ item.nombre }}</div>
           <div class="descripcion">{{ item.descripcion }}</div>
-          <a class="enlace" :href="item.enlace" target="_blank">Saber más</a>
         </li>
       </ul>
     </div>
@@ -226,5 +234,13 @@ ul li .descripcion::before {
 }
 .credits a {
   color: var(--color); /* Aplica el color de texto definido en la variable */
+}
+
+.imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
 }
 </style>

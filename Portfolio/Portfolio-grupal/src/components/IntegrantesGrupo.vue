@@ -1,13 +1,13 @@
 <script setup>
 const grupo = { nombre: "The Gods of Programming", descripcion: "Conozcamos brevemente a cada integrante del grupo"};
 const miembros = [
-    {id:1, nombre: 'Juan Pablo López', descripcion: 'Juan Pablo es un apasionado desarrollador de software con una inclinación hacia la programación funcional. Su amor por los lenguajes de programación exóticos lo llevó a explorar Elixir y Haskell. Cuando no está codificando, le gusta tocar la guitarra y escribir poesía.'}, 
-    {id:2, nombre: "Carina Londero", descripcion: "Carina es una ingeniera de datos con un enfoque en la optimización de consultas SQL. Ha trabajado en proyectos de análisis de big data y le encanta resolver problemas complejos. En su tiempo libre, disfruta de la jardinería y la fotografía."}, 
-    {id:3, nombre: "Jaime Nahuel Ramírez", descripcion:"Jaime es un entusiasta de la ciberseguridad. Ha participado en competencias de hacking ético y siempre está al tanto de las últimas vulnerabilidades. Además de programar, le gusta practicar artes marciales y cocinar platos exóticos."}, 
-    {id:4, nombre: "Uriel Ramírez", descripcion: "Uriel es un desarrollador full-stack con experiencia en JavaScript y Python. Le apasiona la creación de aplicaciones web interactivas y ha contribuido a proyectos de código abierto. Fuera del mundo digital, es un ávido escalador de montañas."}, 
-    {id:5, nombre: "Juliana Rueda",descripcion:"Juliana es una diseñadora de interfaces de usuario (UI) con un ojo para los detalles. Ha trabajado en proyectos de diseño de aplicaciones móviles y sitios web. Cuando no está diseñando, le gusta pintar al óleo y viajar."}, 
-    {id:6, nombre: "Santiago Ortigoza",descripcion:"Santiago es un arquitecto de software con experiencia en sistemas distribuidos. Ha trabajado en proyectos de alta escalabilidad y tolerancia a fallos. Además de programar, disfruta de la astronomía y la observación de estrellas."},];
-</script>
+  {id:1, nombre: 'Juan Pablo López', descripcion: 'Juan Pablo es un estudiante de desarrollo de software con una inclinación hacia la programación funcional. Le gusta explorar nuevos lenguajes de programación y en su tiempo libre disfruta tocar la guitarra y escribir poesía.', foto: 'src/assets/foto-juanpi.jpg'}, 
+  {id:2, nombre: "Carina Londero", descripcion: "Carina es una estudiante de desarrollo de software con un interés especial en el análisis de datos y la optimización de consultas SQL. En su tiempo libre, disfruta de la jardinería y la fotografía.", foto: 'src/assets/foto-carina.jpg'}, 
+  {id:3, nombre: "Jaime Nahuel Ramírez", descripcion:"Jaime es un estudiante de desarrollo de software apasionado por la ciberseguridad. Le gusta mantenerse al día con las últimas vulnerabilidades y en su tiempo libre practica artes marciales y cocina platos exóticos.", foto: 'src/assets/foto-jaime.jpg'}, 
+  {id:4, nombre: "Uriel Ramírez", descripcion: "Uriel es un estudiante de desarrollo de software con un enfoque en el desarrollo full-stack. Le apasiona la creación de aplicaciones web interactivas y en su tiempo libre disfruta escalar montañas.", foto: 'src/assets/foto-uriel.jpg'}, 
+  {id:5, nombre: "Juliana Rueda", descripcion:"Juliana es una estudiante de desarrollo de software con un talento especial para el diseño de interfaces de usuario (UI). En su tiempo libre, le gusta pintar al óleo y viajar.", foto: 'src/assets/foto-juliana.jpg'}, 
+  {id:6, nombre: "Santiago Ortigoza", descripcion:"Santiago es un estudiante de desarrollo de software interesado en la arquitectura de software y los sistemas distribuidos. En su tiempo libre, disfruta de la astronomía y la observación de estrellas.", foto: 'src/assets/foto-santiago.jpg'}
+];</script>
 
 <template>
   <div id="app">
@@ -15,9 +15,12 @@ const miembros = [
       <h1>{{ grupo.nombre }}</h1>
       <p>{{ grupo.descripcion }}</p>
       <ul>
-        <li v-for="miembro in miembros" :key="miembro.id">
-          <strong>{{ miembro.nombre }}</strong>
-          <p>{{ miembro.descripcion }}</p>
+        <li v-for="miembro in miembros" :key="miembro.id" class="miembro">
+          <img :src="miembro.foto" :alt="miembro.nombre" class="foto">
+          <div class="texto">
+            <strong>{{ miembro.nombre }}</strong>
+            <p>{{ miembro.descripcion }}</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -55,5 +58,15 @@ const miembros = [
     font-weight: bold;
     color: #cacee2;
   }
- 
+  .texto {
+    text-align: center;
+  }
+  .foto {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+  }
 </style>

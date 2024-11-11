@@ -1,8 +1,6 @@
 <script setup>
-import proyecto1 from '/src/assets/restaurant.png';
-import proyecto2 from '/src/assets/e-learning.png';
-import proyecto3 from '/src/assets/blog.png';
-import proyecto4 from '/src/assets/restaurant.png';
+import blog from '/src/assets/blog.png';
+import repo from '/src/assets/annidada-tech.jpeg';
 
 // Este componente muestra una galería de proyectos con información sobre cada proyecto
 import { ref } from 'vue';
@@ -13,36 +11,18 @@ misProyectos.value = ([
     //esto es un array de objetos que contiene información sobre los proyectos
     {
         id: 1,
-        src: proyecto1,
-        titulo: "Aplicación de Reservas para Restaurantes (2023)",
-        descripcion: "Creé una aplicación móvil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githubLink: "https://github.com/usuario/proyecto"
+        src: blog,
+        titulo: "Portfolio grupal (2024)",
+        descripcion: "Portfolio del grupo The Gods of Programming",
+        githubLink: "https://github.com/PowerSystem2024/The-Gods-Of-Programming/tree/main/Portfolio/Portfolio-grupal"
     },
     {
-        id: 2,
-        src: proyecto2,
-        titulo: "Plataforma de E-learning (2022)",
-        descripcion: "Diseñé y desarrollé una plataforma de educación en línea utilizando Django y React. Con diferentes funcionalidades",
-        projectoLink: "https://www.google.com.ar",
-        githubLink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 3,
-        src: proyecto3,
-        titulo: "Blog Personal con CMS (2022)",
-        descripcion: "Construí un blog personal con un sistema de gestión de contenidos (CMS) personalizado en WordPress.",
-        projectoLink: "https://www.google.com.ar",
-        githubLink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 4,
-        src: proyecto4,
-        titulo: "Aplicación de Reservas para Restaurantes (2023)",
-        descripcion: "Creé una aplicación móvil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githubLink: "https://github.com/usuario/proyecto"
-    },
+        id: 1,
+        src: repo,
+        titulo: "Repositorio de cursada segundo semestre",
+        descripcion: "PRepositorio del grupo The Gods of Programming",
+        githubLink: "https://github.com/PowerSystem2024/The-Gods-Of-Programming"
+    }
 ])
 
 </script>
@@ -60,8 +40,6 @@ misProyectos.value = ([
                 <h3>{{ proyecto.titulo }}</h3>
                 <p>{{ proyecto.descripcion }}</p>
                 <div class="proyecto-links">
-                    <a :href="proyecto.projectoLink" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver
-                        Proyecto</a>
                     <a :href="proyecto.githubLink" class="github-link" target="_blank" rel="noopener noreferrer">Ver
                         Código en GitHub</a>
                 </div>
