@@ -1,12 +1,19 @@
 <script setup>
+import fotojuan from '/src/assets/foto-juanpi.jpg';
+import fotojaime from '/src/assets/foto-jaime.jpg';
+import fotojuliana from '/src/assets/foto-juliana.jpg';
+import fotouriel from '/src/assets/foto-uriel.jpg';
+import fotosantiago from '/src/assets/foto-santiago.jpg';
+import fotocarina from '/src/assets/foto-carina.jpg';
+
 const grupo = { nombre: "The Gods of Programming", descripcion: "Conozcamos brevemente a cada integrante del grupo"};
 const miembros = [
-  {id:1, nombre: 'Juan Pablo López', descripcion: 'Juan Pablo es un estudiante de desarrollo de software con una inclinación hacia la programación funcional. Le gusta explorar nuevos lenguajes de programación y en su tiempo libre disfruta tocar la guitarra y escribir poesía.', foto: 'src/assets/foto-juanpi.jpg'}, 
-  {id:2, nombre: "Carina Londero", descripcion: "Carina es una estudiante de desarrollo de software con un interés especial en el análisis de datos y la optimización de consultas SQL. En su tiempo libre, disfruta de la jardinería y la fotografía.", foto: 'src/assets/foto-carina.jpg'}, 
-  {id:3, nombre: "Jaime Nahuel Ramírez", descripcion:"Jaime es un estudiante de desarrollo de software apasionado por la ciberseguridad. Le gusta mantenerse al día con las últimas vulnerabilidades y en su tiempo libre practica artes marciales y cocina platos exóticos.", foto: 'src/assets/foto-jaime.jpg'}, 
-  {id:4, nombre: "Uriel Ramírez", descripcion: "Uriel es un estudiante de desarrollo de software con un enfoque en el desarrollo full-stack. Le apasiona la creación de aplicaciones web interactivas y en su tiempo libre disfruta escalar montañas.", foto: 'src/assets/foto-uriel.jpg'}, 
-  {id:5, nombre: "Juliana Rueda", descripcion:"Juliana es una estudiante de desarrollo de software con un talento especial para el diseño de interfaces de usuario (UI). En su tiempo libre, le gusta pintar al óleo y viajar.", foto: 'src/assets/foto-juliana.jpg'}, 
-  {id:6, nombre: "Santiago Ortigoza", descripcion:"Santiago es un estudiante de desarrollo de software interesado en la arquitectura de software y los sistemas distribuidos. En su tiempo libre, disfruta de la astronomía y la observación de estrellas.", foto: 'src/assets/foto-santiago.jpg'}
+  {id:1, nombre: 'Juan Pablo López', descripcion: 'Juan Pablo es un estudiante de desarrollo de software con una inclinación hacia la programación funcional. Le gusta explorar nuevos lenguajes de programación y en su tiempo libre disfruta tocar la guitarra y escribir poesía.', foto: fotojuan}, 
+  {id:2, nombre: "Carina Londero", descripcion: "Carina es una estudiante de desarrollo de software con un interés especial en el análisis de datos y la optimización de consultas SQL. En su tiempo libre, disfruta de la jardinería y la fotografía.", foto: fotocarina}, 
+  {id:3, nombre: "Jaime Nahuel Ramírez", descripcion:"Jaime es un estudiante de desarrollo de software apasionado por la ciberseguridad. Le gusta mantenerse al día con las últimas vulnerabilidades y en su tiempo libre practica artes marciales y cocina platos exóticos.", foto: fotojaime}, 
+  {id:4, nombre: "Uriel Ramírez", descripcion: "Uriel es un estudiante de desarrollo de software con un enfoque en el desarrollo full-stack. Le apasiona la creación de aplicaciones web interactivas y en su tiempo libre disfruta escalar montañas.", foto: fotouriel}, 
+  {id:5, nombre: "Juliana Rueda", descripcion:"Juliana es una estudiante de desarrollo de software con un talento especial para el diseño de interfaces de usuario (UI). En su tiempo libre, le gusta pintar al óleo y viajar.", foto: fotojuliana}, 
+  {id:6, nombre: "Santiago Ortigoza", descripcion:"Santiago es un estudiante de desarrollo de software interesado en la arquitectura de software y los sistemas distribuidos. En su tiempo libre, disfruta de la astronomía y la observación de estrellas.", foto: fotosantiago}
 ];</script>
 
 <template>
